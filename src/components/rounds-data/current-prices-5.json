@@ -1,296 +1,237 @@
 [
     {
-        "bar_id": 5,
         "product_id": 211,
         "current_price": 2.54
     },
     {
-        "bar_id": 5,
         "product_id": 162,
         "current_price": 2.85
     },
     {
-        "bar_id": 5,
         "product_id": 222,
         "current_price": 2.09
     },
     {
-        "bar_id": 5,
         "product_id": 225,
         "current_price": 2.49
     },
     {
-        "bar_id": 5,
         "product_id": 16,
         "current_price": 5.04
     },
     {
-        "bar_id": 5,
         "product_id": 132,
         "current_price": 3.22
     },
     {
-        "bar_id": 5,
         "product_id": 44,
         "current_price": 2.17
     },
     {
-        "bar_id": 5,
         "product_id": 207,
         "current_price": 2.36
     },
     {
-        "bar_id": 5,
         "product_id": 96,
         "current_price": 5.1
     },
     {
-        "bar_id": 5,
         "product_id": 71,
         "current_price": 2.8
     },
     {
-        "bar_id": 5,
         "product_id": 33,
         "current_price": 3.04
     },
     {
-        "bar_id": 5,
         "product_id": 224,
         "current_price": 2.06
     },
     {
-        "bar_id": 5,
         "product_id": 163,
         "current_price": 2.38
     },
     {
-        "bar_id": 5,
         "product_id": 228,
         "current_price": 2.01
     },
     {
-        "bar_id": 5,
         "product_id": 181,
         "current_price": 2.04
     },
     {
-        "bar_id": 5,
         "product_id": 158,
         "current_price": 2.6
     },
     {
-        "bar_id": 5,
         "product_id": 94,
         "current_price": 2.56
     },
     {
-        "bar_id": 5,
         "product_id": 105,
         "current_price": 4.12
     },
     {
-        "bar_id": 5,
         "product_id": 112,
         "current_price": 3.52
     },
     {
-        "bar_id": 5,
         "product_id": 81,
         "current_price": 3.02
     },
     {
-        "bar_id": 5,
         "product_id": 186,
         "current_price": 5.42
     },
     {
-        "bar_id": 5,
         "product_id": 212,
         "current_price": 5.67
     },
     {
-        "bar_id": 5,
         "product_id": 40,
         "current_price": 2.13
     },
     {
-        "bar_id": 5,
         "product_id": 72,
         "current_price": 2.81
     },
     {
-        "bar_id": 5,
         "product_id": 55,
         "current_price": 2.31
     },
     {
-        "bar_id": 5,
         "product_id": 230,
         "current_price": 2.87
     },
     {
-        "bar_id": 5,
         "product_id": 98,
         "current_price": 2.58
     },
     {
-        "bar_id": 5,
         "product_id": 34,
         "current_price": 3.13
     },
     {
-        "bar_id": 5,
         "product_id": 118,
         "current_price": 4.46
     },
     {
-        "bar_id": 5,
         "product_id": 11,
         "current_price": 3.68
     },
     {
-        "bar_id": 5,
         "product_id": 97,
         "current_price": 2.33
     },
     {
-        "bar_id": 5,
         "product_id": 179,
         "current_price": 3.13
     },
     {
-        "bar_id": 5,
         "product_id": 185,
         "current_price": 2.04
     },
     {
-        "bar_id": 5,
         "product_id": 25,
         "current_price": 4.88
     },
     {
-        "bar_id": 5,
         "product_id": 106,
         "current_price": 2.19
     },
     {
-        "bar_id": 5,
         "product_id": 182,
         "current_price": 3.68
     },
     {
-        "bar_id": 5,
         "product_id": 227,
         "current_price": 2.57
     },
     {
-        "bar_id": 5,
         "product_id": 214,
         "current_price": 2.61
     },
     {
-        "bar_id": 5,
         "product_id": 239,
         "current_price": 3.01
     },
     {
-        "bar_id": 5,
         "product_id": 137,
         "current_price": 2.89
     },
     {
-        "bar_id": 5,
         "product_id": 49,
         "current_price": 2.42
     },
     {
-        "bar_id": 5,
         "product_id": 37,
         "current_price": 2.82
     },
     {
-        "bar_id": 5,
         "product_id": 23,
         "current_price": 2.06
     },
     {
-        "bar_id": 5,
         "product_id": 131,
         "current_price": 2.11
     },
     {
-        "bar_id": 5,
         "product_id": 28,
         "current_price": 2.75
     },
     {
-        "bar_id": 5,
         "product_id": 53,
         "current_price": 3.05
     },
     {
-        "bar_id": 5,
         "product_id": 195,
         "current_price": 2.82
     },
     {
-        "bar_id": 5,
         "product_id": 117,
         "current_price": 2
     },
     {
-        "bar_id": 5,
         "product_id": 113,
         "current_price": 3.36
     },
     {
-        "bar_id": 5,
         "product_id": 232,
         "current_price": 2.29
     },
     {
-        "bar_id": 5,
         "product_id": 8,
         "current_price": 3.07
     },
     {
-        "bar_id": 5,
         "product_id": 187,
         "current_price": 2.1
     },
     {
-        "bar_id": 5,
         "product_id": 43,
         "current_price": 3.39
     },
     {
-        "bar_id": 5,
         "product_id": 139,
         "current_price": 2.87
     },
     {
-        "bar_id": 5,
         "product_id": 5,
         "current_price": 2.2
     },
     {
-        "bar_id": 5,
         "product_id": 168,
         "current_price": 3.29
     },
     {
-        "bar_id": 5,
         "product_id": 3,
         "current_price": 2.48
     },
     {
-        "bar_id": 5,
         "product_id": 135,
         "current_price": 3.38
     },
     {
-        "bar_id": 5,
         "product_id": 196,
         "current_price": 2.21
     }

@@ -17,6 +17,8 @@ const paths = {
   static: [
     'src/index.html',
     'src/components/**/*.html',
+    'src/components/**/*.json',
+    'src/components/**/*.jpg',
     'src/modules/**/*.html',
   ],
   sass: [

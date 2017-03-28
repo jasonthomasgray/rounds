@@ -1,0 +1,23 @@
+{
+  "name": "rounds",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jason Gray"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jasonthomasgray/rounds#readme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "^1.6.3",
+    "angular": "angularjs#^1.6.3",
+    "angular-ui-router": "0.4.2"
+  }
+}

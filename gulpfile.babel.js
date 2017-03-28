@@ -29,7 +29,9 @@ const paths = {
 gulp.task('scripts', (done) => {
   pump([
     gulp.src(paths.scripts.concat(ignore(paths.tests))),
-    plugins.babel(), // TODO: stop running bower_components through here (it makes build slow cause angular is massive)
+    plugins.if( // filter bower_components from the babel processing for speed
+      (f) => { return f.path.indexOf('bower_components') === -1}, // for some reason glob matching is unhappy here
+      plugins.babel()),
     plugins.concat('app.js'),
     gulp.dest('dist'),
   ], done)

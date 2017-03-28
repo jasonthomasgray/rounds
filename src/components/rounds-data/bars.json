@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Six Degrees North",
+        "lat": 55.956327,
+        "long": -3.202491,
+        "image_url": "http://lorempixel.com/200/100/abstract/1/"
+    },
+    {
+        "id": 2,
+        "name": "OX184",
+        "lat": 55.948573,
+        "long": -3.188645,
+        "image_url": "http://lorempixel.com/200/100/abstract/2/"
+    },
+    {
+        "id": 3,
+        "name": "Hanover Tap",
+        "lat": 55.9545659,
+        "long": -3.1980877,
+        "image_url": "http://lorempixel.com/200/100/abstract/3/"
+    },
+    {
+        "id": 4,
+        "name": "BrewDog Edinburgh",
+        "lat": 55.9483357,
+        "long": -3.189686,
+        "image_url": "http://lorempixel.com/200/100/abstract/4/"
+    },
+    {
+        "id": 5,
+        "name": "The Tourmalet",
+        "lat": 55.963657,
+        "long": -3.1764747,
+        "image_url": "http://lorempixel.com/200/100/abstract/5/"
+    }
+]

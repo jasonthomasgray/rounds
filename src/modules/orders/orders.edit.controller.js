@@ -3,7 +3,7 @@
   angular.module('rounds.modules')
     .controller('OrdersEditController', OrdersEditController)
 
-  function OrdersEditController(roundsData, $stateParams, $state) {
+  function OrdersEditController(roundsData, $stateParams, $state, orderUtils) {
     const vm = this
 
     vm.bar = {}
@@ -65,15 +65,11 @@
     }
 
     function totalDrinks() {
-      return Object.keys(vm.order.products).reduce((count, key) => {
-        return count + vm.order.products[key].amount
-      },0)
+      return orderUtils.itemCount(vm.order)
     }
 
     function totalPrice() {
-      return Object.keys(vm.order.products).reduce((price, key) => {
-        return price + (vm.order.products[key].price * vm.order.products[key].amount)
-      },0)
+      return orderUtils.totalPrice(vm.order)
     }
 
     function saveOrder() {

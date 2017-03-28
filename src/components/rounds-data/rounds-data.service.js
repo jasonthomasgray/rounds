@@ -15,7 +15,7 @@
     return dataFunctions
 
     function products(barId) {
-      if (!barId) return $q.when([]);
+      if (!barId) return $http.get('components/rounds-data/products.json').then(response => response.data);
       return $q.all({
           prices: $http.get('components/rounds-data/current-prices-' + barId + '.json'),
           products: $http.get('components/rounds-data/products.json'),
@@ -49,8 +49,8 @@
       }
 
       return $q.when(Object.keys($window.localStorage)
-        .filter(key => /order:\d+/.test())
-        .map(key => localStorage.getItem(key))
+        .filter(key => /order:\d+/.test(key))
+        .map(key => JSON.parse(localStorage.getItem(key)))
       )
     }
 

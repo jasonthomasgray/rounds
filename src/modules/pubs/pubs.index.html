@@ -1,28 +1,8 @@
-<h2>Find a Pub</h2>
+<h2>Find a Bar</h2>
 <form>
-  <label for="pubQuery">Search</label><input type="text" name="pubQuery">
-  <button type="submit">Search</button>
+  <label for="barQuery">Search</label><input type="text" name="barQuery" ng-model="vm.resultsQuery">
 </form>
-<h2 ng-if="vm.results">Search Results</h2>
-<table ng-if="vm.results">
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="#"><img ng-src='http://lorempixel.com/150/64/abstract/1/'></a></td>
-      <td><a href="#">Tourmalet</a></td>
-    </tr>
-    <tr>
-      <td><a href="#"><img ng-src='http://lorempixel.com/150/64/abstract/2/'></a></td>
-      <td><a href="#">6 Degrees North</a></td>
-    </tr>
-  </tbody>
-</table>
-<h2>Recent pubs</h2>
+<h2>Search Results</h2>
 <table>
   <thead>
     <tr>
@@ -31,13 +11,19 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><a href="#"><img ng-src='http://lorempixel.com/150/64/abstract/1/'></a></td>
-      <td><a href="#">Tourmalet</a></td>
-    </tr>
-    <tr>
-      <td><a href="#"><img ng-src='http://lorempixel.com/150/64/abstract/2/'></a></td>
-      <td><a href="#">6 Degrees North</a></td>
+    <tr ng-repeat="bar in vm.results | filter: {name: vm.resultsQuery}">
+      <td><a ui-sref="orders-new({bar: bar.id})"><img ng-src='{{bar.image_url}}'></a></td>
+      <td><a ui-sref="orders-new({bar: bar.id})">{{bar.name}}</a></td>
     </tr>
   </tbody>
 </table>
+<h2>Recent orders</h2>
+<ol>
+  <li ng-repeat="order in vm.recent">
+    <a ui-sref="orders-view({id: order.id})">
+      {{order.totalPrice | currency: '£'}} for
+      {{order.itemCount}} drinks
+      at {{order.bar.name}}
+    </a>
+  </li>
+</ol>

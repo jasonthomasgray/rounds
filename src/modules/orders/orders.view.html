@@ -1,0 +1,8 @@
+<h2>Order at {{vm.bar.name}}<a ui-sref="orders-edit({id: vm.order.id})">[edit]</a></h2>
+
+<ul>
+  <li ng-repeat="(id, line) in vm.order.products">{{line.amount}} x {{vm.products[id].name}}</li>
+</ul>
+
+<h3>Total Price</h3>
+<p>{{vm.totalPrice | currency: '£'}}</p>

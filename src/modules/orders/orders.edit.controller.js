@@ -10,7 +10,6 @@
     vm.products = []
     vm.order = {
       products: {},
-      orderedAt: new Date().toString(),
     }
 
     vm.addToOrder = addToOrder

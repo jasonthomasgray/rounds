@@ -48,16 +48,32 @@
         return $q.when(JSON.parse($window.localStorage.getItem('order:' + id)))
       }
 
-      return $q.when(Object.keys($window.localStorage)
-        .filter(key => /order:\d+/.test(key))
-        .map(key => JSON.parse(localStorage.getItem(key)))
-      )
+      // since localStorage key order isn't guaranteed lets just loop back over ids checking if they exists
+      var mostRecentId = parseInt($window.localStorage.getItem('idOrders'), 10)
+      var recentOrders = [];
+      if (mostRecentId) {
+        for (var i = mostRecentId; i > 0; i--) {
+          const order = JSON.parse(localStorage.getItem('order:' + i))
+          if (order) {
+            if (recentOrders.push(order) >=10) { // add upto ten orders
+              break;
+            }
+          }
+        }
+      }
+      return $q.when(recentOrders)
     }
 
     function ordersSave(order) {
       if (!order.id) {
         order.id = nextOrderId()
       }
+      // remove 0 orders
+      Object.keys(order.products).forEach((key) => {
+        if (order.products[key].amount < 1) {
+          delete order.products[key]
+        }
+      })
       $window.localStorage.setItem('order:' + order.id, JSON.stringify(order))
       return $q.when(order.id)
     }
